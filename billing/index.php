@@ -166,4 +166,4 @@ try {
     echo '<h1>Billing request unavailable</h1><p>Check your access and the information entered. If you submitted a document, check its history before trying again.</p><a href="./">Return to billing</a>';
 }
 $content=ob_get_clean();
-?><!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Billing | Ace Electric Inc.</title><link rel="stylesheet" href="billing.css"><header><a href="/">Ace Electric Inc.</a></header><main><?=$content?></main></html>
+?><!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Billing | Ace Electric Inc.</title><link rel="stylesheet" href="billing.css?v=<?=filemtime(__DIR__.'/billing.css')?>"><header><a href="/">Ace Electric Inc.</a></header><main><?=$content?></main></html>
